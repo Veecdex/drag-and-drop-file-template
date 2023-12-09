@@ -1,0 +1,51 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: pink;
+    margin: 20px;
+}
+
+h1 {
+    margin-top: 20px;
+    color: grey;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#drag-drop-box,
+#file-display-box,
+#file-content-box,
+#spacer-box {
+    width: 100%;
+    max-width:800px;
+    margin: 10px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    height: 400px;
+}
+
+#drag-drop-box {
+    cursor: pointer;
+}
+
+#file-display-box button {
+    width: 100%;
+}
+
+#file-content-box img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+    margin: auto;
+}
+
+#file-input {
+    display: none;
+}

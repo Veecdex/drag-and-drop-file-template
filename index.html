@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+     <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1 class="text-center">DRAG AND DROP FILES TEMPLATE</h1>
+
+    <div  id="main-container" class="d-flex flex-column align-items-center">
+        <label for="file-input" id="drag-drop-box" ondrop="drop(event)" ondragover="allowDrop(event)" onclick="selectFiles()">
+            <img style="height: 60px; width: 60px;" src="open file icon.png" alt="">
+            <p style="opacity: 60%;">Drag-drop or click here to choose a file</p>
+            <input type="file" id="file-input" multiple onchange="handleFileSelect(event)">
+        </label>
+
+
+        <div id="file-display-box">
+            <img style="height: 60px; width: 60px;" src="file info icon.png" alt="">
+            <p class="text-center" style="opacity: 60%;">File Information</p>
+        </div>
+
+        <div id="file-content-box">
+            <img style="height: 60px; width: 60px;" src="view icon.png" alt="">
+            <p class="text-center" style="opacity: 60%;">File Content</p>
+        </div>
+    </div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
